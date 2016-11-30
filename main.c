@@ -4,7 +4,21 @@
 
 int main(int args, char *argv[])
 {
-    printf("hello world\n");
+	if (args < 2)
+	{
+		printf("args too few");
+		return -1;
+	}
+	
+	if (argv[1] == 'h')
+	{
+        printf("hello world\n");
+	}
+	else 
+	{
+		printf("please enter h to print string");
+	}
+	
     return 0;	
 }
 
